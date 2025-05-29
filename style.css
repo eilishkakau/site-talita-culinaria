@@ -1,19 +1,19 @@
-/* Importação de Fontes do Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;700&display=swap');
 
-/* Variáveis CSS para Cores */
+
 :root {
-    --primary-color: #A0522D; /* Marrom-avermelhado (tom terroso) */
-    --secondary-color: #D2B48C; /* Areia (tom claro) */
-    --accent-color: #8B4513; /* Marrom escuro (para detalhes) */
+    --primary-color: #A0522D; 
+    --secondary-color: #D2B48C; 
+    --accent-color: #8B4513; 
     --text-color: #333;
     --light-text-color: #666;
-    --background-light: #FDF5E6; /* Creme claro */
-    --background-dark: #FAF0E6; /* Linho claro */
+    --background-light: #FDF5E6; 
+    --background-dark: #FAF0E6; 
     --white: #ffffff;
 }
 
-/* Reset Básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,9 +25,9 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-light);
-    display: flex; /* Adicionado para empurrar o rodapé para baixo */
-    flex-direction: column; /* Adicionado para empurrar o rodapé para baixo */
-    min-height: 100vh; /* Garante que a página tenha pelo menos a altura da viewport */
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
     padding: 0 20px;
 }
 
-/* Títulos */
+
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     color: var(--accent-color);
@@ -64,7 +64,7 @@ p {
     margin-bottom: 1em;
 }
 
-/* --- Header (Cabeçalho) --- */
+
 header {
     background-color: var(--primary-color);
     color: var(--white);
@@ -79,7 +79,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    flex-wrap: wrap; 
 }
 
 header h1 {
@@ -108,7 +108,7 @@ header nav ul li a:hover {
     color: var(--secondary-color);
 }
 
-/* --- Botões --- */
+
 .button, .button-small {
     display: inline-block;
     background-color: var(--accent-color);
@@ -133,7 +133,7 @@ header nav ul li a:hover {
     font-size: 0.9em;
 }
 
-/* --- Seções Gerais --- */
+
 section {
     padding: 60px 0;
 }
@@ -146,7 +146,7 @@ section {
     background-color: var(--background-dark);
 }
 
-/* --- Hero Section --- */
+
 #hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1500x600/8B4513/D2B48C?text=Imagem+de+Fundo+Culinaria') no-repeat center center/cover;
     color: var(--white);
@@ -172,7 +172,7 @@ section {
     opacity: 0.9;
 }
 
-/* --- Sobre a Chefe Section --- */
+
 #sobre .about-content {
     display: flex;
     flex-direction: column;
@@ -197,7 +197,7 @@ section {
     color: var(--light-text-color);
 }
 
-/* --- Receitas em Destaque Section --- */
+
 .recipe-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -241,7 +241,7 @@ section {
     margin-bottom: 20px;
 }
 
-/* --- Dicas de Culinária Section --- */
+
 .tips-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -262,8 +262,7 @@ section {
     color: var(--primary-color);
 }
 
-/* --- Contato Section (se tiver uma) --- */
-/* Certifique-se de que esta seção exista se você quiser que os estilos de formulário funcionem */
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -296,35 +295,35 @@ section {
 }
 
 
-/* --- Rodapé (Footer) --- */
-.main-footer { /* Renomeado de 'footer' para 'main-footer' para evitar conflitos */
-    background-color: var(--accent-color); /* Um marrom escuro que combina */
+
+.main-footer { 
+    background-color: var(--accent-color); 
     color: var(--white);
     padding-top: 50px;
     font-size: 0.95em;
-    margin-top: auto; /* Empurra o rodapé para o final da página */
+    margin-top: auto; 
 }
 
 .main-footer .footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px; /* Espaçamento entre as colunas */
+    gap: 30px; 
     padding-bottom: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Linha divisória sutil */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .footer-section {
-    flex: 1; /* Faz as seções ocuparem o espaço disponível */
-    min-width: 220px; /* Largura mínima para cada seção */
+    flex: 1; 
+    min-width: 220px; 
     margin-bottom: 20px;
 }
 
 .footer-section h3 {
-    color: var(--secondary-color); /* Títulos em cor clara para destaque */
+    color: var(--secondary-color); 
     font-size: 1.2em;
     margin-bottom: 20px;
-    text-align: left; /* Alinha o título à esquerda */
+    text-align: left; 
 }
 
 .footer-section p {
@@ -334,7 +333,7 @@ section {
 
 .footer-section p i {
     margin-right: 10px;
-    color: var(--secondary-color); /* Cor dos ícones de contato */
+    color: var(--secondary-color); 
 }
 
 .footer-section a {
@@ -347,29 +346,29 @@ section {
     color: var(--secondary-color);
 }
 
-/* Estilo específico para os ícones das redes sociais */
+
 .social-icons {
     display: flex;
-    gap: 15px; /* Espaçamento entre os ícones */
+    gap: 15px; 
     margin-top: 15px;
 }
 
-.social-icons a img { /* Estilizando a imagem dentro do link */
-    width: 30px; /* Tamanho dos ícones */
+.social-icons a img { 
+    width: 30px;
     height: 30px;
     vertical-align: middle;
     transition: transform 0.2s ease;
-    filter: invert(1); /* Inverte a cor se o SVG for preto para ficar branco */
+    filter: invert(1);
 }
 
 .social-icons a:hover img {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.1); 
 }
 
 
-/* Links Úteis */
+
 .useful-links ul {
-    list-style: none; /* Remove os marcadores de lista */
+    list-style: none; 
 }
 
 .useful-links ul li {
@@ -377,12 +376,12 @@ section {
 }
 
 .useful-links ul li a {
-    display: block; /* Faz com que cada link ocupe sua própria linha */
+    display: block;
 }
 
-/* Rodapé inferior com direitos autorais */
+
 .footer-bottom {
-    background-color: var(--primary-color); /* Um marrom avermelhado */
+    background-color: var(--primary-color); 
     padding: 15px 0;
     text-align: center;
 }
@@ -393,7 +392,7 @@ section {
 }
 
 
-/* --- Responsividade (Media Queries) --- */
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2.2em;
@@ -438,29 +437,29 @@ section {
         grid-template-columns: 1fr;
     }
 
-    /* Responsividade do rodapé para telas menores */
+   
     .main-footer .footer-content {
-        flex-direction: column; /* Colunas empilham */
-        align-items: center; /* Centraliza o conteúdo das colunas */
-        text-align: center; /* Centraliza o texto das colunas */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
     }
 
     .footer-section {
-        min-width: auto; /* Remove a largura mínima para se adaptar */
-        width: 100%; /* Ocupa a largura total */
+        min-width: auto; 
+        width: 100%; 
         margin-bottom: 30px;
     }
 
     .footer-section h3 {
-        text-align: center; /* Centraliza os títulos em telas menores */
+        text-align: center; 
     }
 
     .social-icons {
-        justify-content: center; /* Centraliza os ícones sociais em telas menores */
+        justify-content: center; 
     }
 
     .useful-links ul {
-        padding-left: 0; /* Remove o padding padrão da lista */
+        padding-left: 0; 
     }
 }
 
